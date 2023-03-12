@@ -1,0 +1,44 @@
+.app {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 200px;
+    width: 200px;
+    background-color: #ff69b4;
+    border-radius: 50%;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .logo {
+      animation: rotate 2s linear infinite;
+    }
+  }
+  
+  .header {
+    background-color: #e6e6e6;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: black;
+  }
+  
+  .link {
+    color: #007bff;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
